@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionando elemento</title>
+    <style>
+        body{
+            background-color: #007fc7;
+
+        }
+
+        #container{
+             background-color: white;
+             width: 800px;
+             height: 1000px;
+             padding: 10px;
+             margin: 20px auto;
+             position: relative;
+             top: 0px;
+            
+        }
+        .relative{
+            width: 400px;
+            border: 1px solid red;
+            position: relative;
+            top: 50px;
+            left: 500px;
+
+        }
+        .absolute{
+            width: 200px;
+            border: 1px solid violet;
+            position: absolute;
+            left: 100px;
+
+        }
+        .fixed{
+            width: 200px;
+            border: 1px solid blueviolet;
+            position: fixed ;
+
+        }
+        #menu{
+            width: 100%;
+            height: 30px;
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            left: 0;
+            top: -35px;
+            position: fixed;
+            z-index: 1;
+
+        }
+        #menu:hover{
+            top: 0;
+            transition: 1s;
+        }
+        #menu a:link, #menu a:visited{
+            
+            color: white;
+            font-weight: bold;
+
+        }
+        #menu a:active{
+            color: violet;
+            transition: 1s;
+        }
+        #menu a:hover{
+            color: black;
+            background-color: white;
+            padding: 8px 12px;
+            transition: 6s;
+        }
+        a{
+            text-decoration: none;
+            padding: 8px 12px;
+
+        }
+          
+    </style>
+</head>
+<body>
+    <nav id="menu">
+            <a href="#">Home</a>
+            <a href="#">Contatos</a>
+            <a href="#">ET</a>
+            <a href="#">Animes</a>
+        </nav>
+
+    <main id="container">     
+
+        <h1>Posinamento</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ipsa eveniet nisi est veniam tenetur aperiam atque iusto minus laborum quaerat totam, ipsum alias, corrupti, ad nesciunt libero. Placeat, quidem!</p>
+
+        <p class="relative">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit libero ex aut corrupti, ab officiis est repellat facilis rem. Neque eligendi, amet debitis molestiae nobis reprehenderit provident! Provident, reiciendis reprehenderit.</p>
+
+        <p class="absolute">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur veritatis dolorum magni possimus officiis provident sunt aperiam vitae animi! Facilis deserunt veritatis dolorum rerum, neque distinctio inventore maiores optio?</p>
+
+        <p class="fixed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non culpa, repellendus repudiandae at quidem beatae sunt aliquid dicta? Debitis esse ipsa laudantium velit cupiditate consectetur porro nostrum dolores, voluptatibus error!</p>
+
+
+    </main>
+    
+</body>
+</html>

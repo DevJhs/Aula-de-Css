@@ -1,0 +1,21 @@
+#container{
+      color: brown;     
+      background-color: yellowgreen;
+      width: 1000px;
+      height: 400px;
+      
+}
+.containerc{
+  color: yellow;
+  border: black 4px solid;
+  background-color: rgb(221, 157, 39);
+  width: 200px;
+  height: 150px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+div{
+    display: inline-block;
+    
+}

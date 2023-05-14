@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Colapse</title>
+    <style>
+        .principal{
+            background-color: grey;
+             width: 900px;
+             margin: 10px;
+        }
+        .produto{
+            background-color: dodgerblue;
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            margin-bottom: 20px;
+           display: inline-block;
+
+        }
+    </style>
+</head>
+<body>
+     <div class="principal">
+         <div class="produto">produto</div>
+         <div class="produto">produto</div>
+         <div class="produto">produto</div>
+     </div>
+     <div class="principal">
+        <div class="produto">produto</div>
+        <div class="produto">produto</div>
+        <div class="produto">produto</div>
+    </div>
+</body>
+</html>
